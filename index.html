@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Free trainer 3 / MMW</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/reset.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="content-wrapper">
+            <div class="column">
+                <div id="slug" class="slug"></div>
+                <img id=featured src="">
+                <div id="slide-wrapper" >
+                    <div id="slider"></div>
+                </div>
+            </div>
+
+            <div class="column">
+                <span class="subtitle">by Nike x ALYX</span>
+                <h2 id="title" class="black"></h2>
+                <h3 id="price" class="black mt-5 mb-10"></h3>
+
+                <hr class="greyborder">
+                <input type="hidden" value="" id="variant_0"/>
+                <h4 id="variantColors" class="color mt-10 mb-10"></h4>
+
+                <hr class="greyborder">
+                <input type="hidden" value="" id="variant_1"/>
+                <h4 id="variantSizes" class="mt-10 mb-10"></h4>
+
+                <hr class="greyborder">
+                <div class="row">
+                    <div class="half">
+                        <input type="button" value="-" id="minus" class="btn_amount">
+                        <input class="amount" value="2" type="number">
+                        <input type="button" value="+" id="minus" class="btn_amount">
+                    </div>
+                    <div class="half text-right total">Total price: <span>$ 570</span></div>
+                </div>
+
+                <div class="row">
+                    <div class="half"><a class="btn btn-grey w-100" href="#">Add to favourite</a></div>
+                    <div class="half"><a id="modalOpen" class="btn btn-dark w-100" href="#">Add to cart</a></div>
+                </div>
+                
+
+                <p id="desc" class="description mt-10"></p>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="modal" class="modalContainer" style="display:none;">
+        <div class="modal-content">
+           <span id="modalClose" class="close">×</span>
+           <h2 id="modalTitle"></h2>
+           <div id="modalContent" class="mt-10"></div>
+       </div>
+   </div>
+
+    <script src='js/main.js'></script>
+</body>
+
+</html>
